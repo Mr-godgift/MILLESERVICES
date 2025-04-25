@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MILLESERVICES</title>
+  <link rel="icon" href="logo.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: black; /* Arrière-plan noir pour tout le body */
+      color: #333;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7); /* Garde l'arrière-plan noir semi-transparent pour l'entête */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-style: italic;
+      font-size: 2.5em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .logo {
+      background: linear-gradient(to right, #ccc 50%, #000 50%);
+      color: white;
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 2em;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 2px;
+    }
+    .logo span:first-child {
+      color: black;
+    }
+    .services, .apropos, .galerie {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.8); /* Fond clair pour les sections */
+      border-radius: 8px;
+    }
+    .services h2, .apropos h2, .galerie h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .services > div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: white;
+      padding: 15px;
+      border-left: 4px solid #007bff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .service img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .carousel {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+    .carousel img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: white;
+    }
+    .whatsapp {
+      text-decoration: none;
+      background: green;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <span>MILLE</span><span style="color: white;">SERVICES</span>
+    </div>
+    <p>Private Security & Surveillance</p>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#apropos">À propos</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="accueil" class="services">
+    <h2>Bienvenue chez MILLESERVICES</h2>
+    <p style="text-align: center; font-size: 1.2em;">Votre sécurité, notre priorité – MILLESERVICES, votre partenaire de confiance.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Nos Services</h2>
+    <div>
+      <div class="service">
+        <img src="D:/projet milleservice/immeuble.jpg" alt="Sécurité résidentielle" />
+        🛡️ <strong>Sécurité résidentielle et professionnelle</strong><br/>Protection des habitations privées, immeubles et entreprises avec présence continue d’agents qualifiés.
+      </div>
+      <div class="service">
+        <img src="D:/projet milleservice/chantier.jpg" alt="Sécurité de chantiers" />
+        🏗️ <strong>Sécurité sur un chantier en construction</strong><br/>Surveillance de zones de construction contre les intrusions, vols de matériaux et incidents sur le site.
+      </div>
+      <div class="service">
+        <img src="D:/projet milleservice/station.jpg" alt="Sécurité station" />
+        ⛽ <strong> Sécurité d'entreprises et sites sensibles  </strong><br/>Protection continue de sites professionnels, commerces et infrastructures sensibles. Nous collaborons notamment avec des stations-service, des entrepôts et des sièges d’entreprise pour garantir un environnement sécurisé 24h/24.
+      </div>
+      <div class="service">
+        <img src="D:/projet milleservice/garderapp.jpg" alt="sécurité ouvrant portière" />
+        🧍‍♂️ <strong>🚘Accompagnement VIP</strong><br/>Accompagnement sécurisé et confidentiel lors de vos déplacements.
+      </div>
+      <div class="service">
+        <img src="D:/projet milleservice/service5.jpg" alt="Événements" />
+        🎪 <strong>Sécurisation de groupes et événements spéciaux</strong><br/>Encadrement des événements, mariages ou rassemblements par des agents discrets et efficaces.
+      </div>
+      <div class="service">
+        <img src="D:/projet milleservice/camera-poste.jpg" alt="Surveillance caméras" />
+        🎥 <strong>Surveillance des caméras depuis poste d’observation</strong><br/>Agents en poste d’observation analysant en direct les flux vidéos pour prévenir toute situation anormale.
+      </div>
+      <div class="service">
+        <img src="D:/projet milleservice/gps-tracking.jpg" alt="Suivi GPS" />
+        📍 <strong>Suivi GPS des motos et voitures en temps réel</strong><br/>Système de géolocalisation avancé avec possibilité
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Contactez-nous :</p>
+    <p>Email : contact@example.com</p>
+    <p>Téléphone : +228 91902445</p>
+    <p>Ville : Lomé</p>
+    <a class="whatsapp" href="https://wa.me/22891902445" target="_blank">📞 Chat sur WhatsApp</a>
+    <p>&copy; 2025 MILLESERVICES</p>
+  </footer>
+</body>
+</html>
